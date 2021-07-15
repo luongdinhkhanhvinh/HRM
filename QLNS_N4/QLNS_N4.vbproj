@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3374A8C9-51D7-4C96-83CD-7A2E7D671D9F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLNS_N4</RootNamespace>
+    <AssemblyName>QLNS_N4</AssemblyName>
+    <StartupObject>QLNS_N4.FRM_QLNS</StartupObject>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>users.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v13.1" />
+    <Reference Include="DevExpress.Charts.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v13.1" />
+    <Reference Include="DevExpress.Office.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.1" />
+    <Reference Include="DevExpress.Utils.v13.1.UI, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v13.1" />
+    <Reference Include="DevExpress.XtraCharts.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.1" />
+    <Reference Include="DevExpress.XtraGrid.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v13.1" />
+    <Reference Include="DevExpress.XtraNavBar.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v13.1.Extensions, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\JOBS ME\code simple\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FRM_ADD_DIEUDONG_NV.Designer.vb">
+      <DependentUpon>FRM_ADD_DIEUDONG_NV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ADD_DIEUDONG_NV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ADD_HOPDONG.Designer.vb">
+      <DependentUpon>FRM_ADD_HOPDONG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ADD_HOPDONG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ADD_NHANVIEN_BAOHIEM.Designer.vb">
+      <DependentUpon>FRM_ADD_NHANVIEN_BAOHIEM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ADD_NHANVIEN_BAOHIEM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ADD_NHANVIEN_NGHIVIEC.Designer.vb">
+      <DependentUpon>FRM_ADD_NHANVIEN_NGHIVIEC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ADD_NHANVIEN_NGHIVIEC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ADD_USER.Designer.vb">
+      <DependentUpon>FRM_ADD_USER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ADD_USER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_CAPNHAT_TANGCA.Designer.vb">
+      <DependentUpon>FRM_CAPNHAT_TANGCA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_CAPNHAT_TANGCA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_CHAMCONGDUPHONG.Designer.vb">
+      <DependentUpon>FRM_CHAMCONGDUPHONG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_CHAMCONGDUPHONG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_CHUCVU.Designer.vb">
+      <DependentUpon>FRM_CHUCVU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_CHUCVU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DANGKYTHE_NHANVIEN.Designer.vb">
+      <DependentUpon>FRM_DANGKYTHE_NHANVIEN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DANGKYTHE_NHANVIEN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DANGKY_TANGCA.Designer.vb">
+      <DependentUpon>FRM_DANGKY_TANGCA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DANGKY_TANGCA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DANGNHAP.Designer.vb">
+      <DependentUpon>FRM_DANGNHAP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DANGNHAP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DANTOC.Designer.vb">
+      <DependentUpon>FRM_DANTOC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DANTOC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DIEUDONG_NHANVIEN.Designer.vb">
+      <DependentUpon>FRM_DIEUDONG_NHANVIEN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DIEUDONG_NHANVIEN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_BAOHIEM.Designer.vb">
+      <DependentUpon>FRM_BAOHIEM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_BAOHIEM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_HOPDONG_LAODONG.Designer.vb">
+      <DependentUpon>FRM_HOPDONG_LAODONG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_HOPDONG_LAODONG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_MAYCHAMCONG.Designer.vb">
+      <DependentUpon>FRM_MAYCHAMCONG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_MAYCHAMCONG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_NHANVIEN.Designer.vb">
+      <DependentUpon>FRM_NHANVIEN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_NHANVIEN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_NHANVIEN_NGHIVIEC.Designer.vb">
+      <DependentUpon>FRM_NHANVIEN_NGHIVIEC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_NHANVIEN_NGHIVIEC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_NHANVIEN_THAISAN.Designer.vb">
+      <DependentUpon>FRM_NHANVIEN_THAISAN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_NHANVIEN_THAISAN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_NHATKY_CHAMCONG.Designer.vb">
+      <DependentUpon>FRM_NHATKY_CHAMCONG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_NHATKY_CHAMCONG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PHEPNAM_NHANVIEN.Designer.vb">
+      <DependentUpon>FRM_PHEPNAM_NHANVIEN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PHEPNAM_NHANVIEN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PHONGBAN.Designer.vb">
+      <DependentUpon>FRM_PHONGBAN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PHONGBAN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_QLNS.Designer.vb">
+      <DependentUpon>FRM_QLNS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_QLNS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_REPORT.Designer.vb">
+      <DependentUpon>FRM_REPORT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_REPORT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_THEM_DANGKYTHE.Designer.vb">
+      <DependentUpon>FRM_THEM_DANGKYTHE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_THEM_DANGKYTHE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_THEM_NHANVIEN.Designer.vb">
+      <DependentUpon>FRM_THEM_NHANVIEN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_THEM_NHANVIEN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_THEM_NHANVIEN_THAISAN.Designer.vb">
+      <DependentUpon>FRM_THEM_NHANVIEN_THAISAN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_THEM_NHANVIEN_THAISAN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_TINHTHANH.Designer.vb">
+      <DependentUpon>FRM_TINHTHANH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_TINHTHANH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_TONGIAO.Designer.vb">
+      <DependentUpon>FRM_TONGIAO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_TONGIAO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_TRINHDO.Designer.vb">
+      <DependentUpon>FRM_TRINHDO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_TRINHDO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_USER.Designer.vb">
+      <DependentUpon>FRM_USER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_USER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mod_KetNoi.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="PrintRibbonControllerResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT_NHANVIEN.Designer.vb">
+      <DependentUpon>RPT_NHANVIEN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RPT_NHANVIEN.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT_NHANVIEN_THAISAN.Designer.vb">
+      <DependentUpon>RPT_NHANVIEN_THAISAN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RPT_NHANVIEN_THAISAN.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XRDesignRibbonControllerResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XRDesignRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT_DANGKY_TANGCA.Designer.vb">
+      <DependentUpon>RPT_DANGKY_TANGCA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RPT_DANGKY_TANGCA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="FRM_ADD_DIEUDONG_NV.resx">
+      <DependentUpon>FRM_ADD_DIEUDONG_NV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ADD_HOPDONG.resx">
+      <DependentUpon>FRM_ADD_HOPDONG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ADD_NHANVIEN_BAOHIEM.resx">
+      <DependentUpon>FRM_ADD_NHANVIEN_BAOHIEM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ADD_NHANVIEN_NGHIVIEC.resx">
+      <DependentUpon>FRM_ADD_NHANVIEN_NGHIVIEC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ADD_USER.resx">
+      <DependentUpon>FRM_ADD_USER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_CAPNHAT_TANGCA.resx">
+      <DependentUpon>FRM_CAPNHAT_TANGCA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_CHAMCONGDUPHONG.resx">
+      <DependentUpon>FRM_CHAMCONGDUPHONG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_CHUCVU.resx">
+      <DependentUpon>FRM_CHUCVU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DANGKYTHE_NHANVIEN.resx">
+      <DependentUpon>FRM_DANGKYTHE_NHANVIEN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DANGKY_TANGCA.resx">
+      <DependentUpon>FRM_DANGKY_TANGCA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DANGNHAP.resx">
+      <DependentUpon>FRM_DANGNHAP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DANTOC.resx">
+      <DependentUpon>FRM_DANTOC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DIEUDONG_NHANVIEN.resx">
+      <DependentUpon>FRM_DIEUDONG_NHANVIEN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_BAOHIEM.resx">
+      <DependentUpon>FRM_BAOHIEM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_HOPDONG_LAODONG.resx">
+      <DependentUpon>FRM_HOPDONG_LAODONG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_MAYCHAMCONG.resx">
+      <DependentUpon>FRM_MAYCHAMCONG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_NHANVIEN.resx">
+      <DependentUpon>FRM_NHANVIEN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_NHANVIEN_NGHIVIEC.resx">
+      <DependentUpon>FRM_NHANVIEN_NGHIVIEC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_NHANVIEN_THAISAN.resx">
+      <DependentUpon>FRM_NHANVIEN_THAISAN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_NHATKY_CHAMCONG.resx">
+      <DependentUpon>FRM_NHATKY_CHAMCONG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PHEPNAM_NHANVIEN.resx">
+      <DependentUpon>FRM_PHEPNAM_NHANVIEN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PHONGBAN.resx">
+      <DependentUpon>FRM_PHONGBAN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_QLNS.resx">
+      <DependentUpon>FRM_QLNS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_REPORT.resx">
+      <DependentUpon>FRM_REPORT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_THEM_DANGKYTHE.resx">
+      <DependentUpon>FRM_THEM_DANGKYTHE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_THEM_NHANVIEN.resx">
+      <DependentUpon>FRM_THEM_NHANVIEN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_THEM_NHANVIEN_THAISAN.resx">
+      <DependentUpon>FRM_THEM_NHANVIEN_THAISAN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_TINHTHANH.resx">
+      <DependentUpon>FRM_TINHTHANH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_TONGIAO.resx">
+      <DependentUpon>FRM_TONGIAO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_TRINHDO.resx">
+      <DependentUpon>FRM_TRINHDO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_USER.resx">
+      <DependentUpon>FRM_USER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_NHANVIEN.resx">
+      <DependentUpon>RPT_NHANVIEN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_NHANVIEN_THAISAN.resx">
+      <DependentUpon>RPT_NHANVIEN_THAISAN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XRDesignRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>XRDesignRibbonControllerResources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_DANGKY_TANGCA.resx">
+      <DependentUpon>RPT_DANGKY_TANGCA.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="users.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="zkemkeeper">
+      <Guid>{FE9DED34-E159-408E-8490-B720A5E632C7}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
